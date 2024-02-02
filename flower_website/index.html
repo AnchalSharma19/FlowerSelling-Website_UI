@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single_Page Flower Selling Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+
+        <!--NAVBAR-->
+
+        <nav class="navbar navbar-expand-lg bg-light fixed-top ">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="https://cdn-icons-png.flaticon.com/512/2579/2579446.png"
+                        height="50" alt="logo"><span class="word_1">The</span><span class="word_2">Spring</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active p-3" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active p-3" aria-current="page" href="#about">ABOUT
+                                US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle p-3 active" href="#products" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="true">
+                                PRODUCTS
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#services">TOP PRODUCTS</a></li>
+                                <li><a class="dropdown-item" href="#latest">LATEST PRODUCTS</a></li>
+                                <li><a class="dropdown-item" href="#bouqets">BOUQUETS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active p-3" aria-current="page" href="#reviews">REVIEWS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active p-3" aria-current="page" href="#contact">CONTACT US</a>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <button type="button" class="btn btn-dark"
+                                style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);"><i
+                                    class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button>
+                        </div>
+                    </form>
+                    <a href="#"><i class="fa-solid fa-heart p-3  " style="color: #000000;"></i></a>
+                    <a href="cart.html" target="blank"><i class="fa-solid fa-cart-shopping p-3 "
+                            style="color: #000000;"></i></a>
+                    <a href="user.html"><i class="fa-solid fa-user p-3 " style="color: #000000;"></i></a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+        <!--CAROUSEL-->
+
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1611010975898-45c3212b78a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80"
+                        class="d-block w-100">
+
+                    <div class="carousel-caption ">
+                        <h2 class="text-white" style="font-weight: 800;">WELCOME TO <span
+                                style="font-family: 'Brush Script MT', cursive; color:rgb(226, 121, 226); font-size: 50px; letter-spacing: 4px; font-weight: 700;">The</span><span
+                                style="font-family: 'Brush Script MT', cursive; color:rgb(244, 166, 192); font-size: 50px; letter-spacing: 4px; font-weight: 700;">Spring</span>
+                        </h2>
+                        <p class="text-white" style="font-size: 20px;">Explore the exquisite collection of flowers for
+                            every occasion</p>
+                        <button type="button" class="btn btn-outline-light"
+                            style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Explore</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/173665/pexels-photo-173665.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="d-block w-100" alt="carousel_2">
+                    <div class="carousel-caption ">
+                        <h2 class="text-dark" style="font-weight: 600;">Fresh <span
+                                style="color:purple; font-family: 'Brush Script MT', cursive; letter-spacing: 4px;">
+                                Flowers</span>,
+                            Fresh<span
+                                style="color:purple; font-family: 'Brush Script MT', cursive; font-size: 50px; letter-spacing: 4px;">
+                                Moments</span></h2>
+                        <p class="text-dark" style="font-size: 20px;">Lorem ipsum dolor sit amet.</p>
+                        <button type="button" class="btn btn-outline-dark"
+                            style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Know More</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.pexels.com/photos/7663241/pexels-photo-7663241.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        class="d-block w-100" alt="carousel_3">
+                    <div class="carousel-caption ">
+                        <h2 class="text-black" style="font-weight: 600;">Brings <span
+                                style="color:rgb(225, 93, 93); font-family:'Brush Script MT', cursive;  font-size: 50px ; letter-spacing: 4px;">
+                                Nature's
+                                Beauty </span> To Your <span
+                                style="font-family:'Brush Script MT', cursive;  font-size: 50px ; color: rgb(225, 93, 93); letter-spacing: 4px;">Doorstep</span>
+                        </h2>
+                        <p class="text-black" style="font-size: 20px;">Lorem ipsum dolor sit, amet consectetur
+                            adipisicing.</p>
+                        <button type="button" class="btn btn-outline-dark"
+                            style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Know More</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!--ABOUT US-->
+        <section id="about" class="about-section-padding" id="aboutme">
+            <div class="container">
+                <br>
+                <h6 class="display-6 text-center">About Us</h6>
+                <br>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="about-img">
+                            <img src="https://images.pexels.com/photos/1427877/pexels-photo-1427877.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                class="image-fluid" height="330" width="470" alt="#image">
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="text-about">
+                            <h2>We Provide Best Quality Servives </h2>
+                            <p class="text-black-50">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+                                tempore modi illo velit ducimus autem sequi laborum quos. Nostrum atque distinctio
+                                exercitationem unde voluptatem! Vitae similique maxime sit animi. Accusamus voluptatum,
+                                reprehenderit explicabo labore maxime assumenda, nobis velit error dignissimos aut eum
+                                sunt dolorem voluptates veritatis nemo repudiandae quos quasi! Aliquid consectetur
+                                blanditiis aliquam voluptatum libero exercitationem beatae nobis reiciendis error magni
+                                fugiat iusto dolore, accusantium quasi quis, molestiae ea maxime omnis ipsam numquam
+                                impedit nihil? Quam vitae quod, dolore animi aut deleniti, accusamus quae expedita
+                                reprehenderit, impedit facere temporibus sunt excepturi nesciunt dolorem reiciendis
+                                amet. Dignissimos quis ducimus illo.</p>
+                            <a href="#" class="btn btn-dark" style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Know
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--PRODUCTS-->
+        <br>
+        <br>
+        <section id="services" class="service-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h6 class="display-6 text-center"> Our Top Products</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="card mb-4 shadow rounded" style="width:20rem; top: 15px;">
+                        <img src="https://images.unsplash.com/photo-1552127539-713d5c5db9c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2948&q=80"
+                            class="card-img-top" alt="product_one">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center ">ROSE</h5>
+                            <p class="card-text text-center ">Lorem ipsum dolor sit. <br><span
+                                    class="text-black-50">100+ bought in past month</span>
+                            </p>
+                            <div style="padding-left: 95px; ">
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                            </div>
+
+                            <p class="text-center " id="rupee">₹200</p>
+                            <button type="button" class="btn btn-warning m-4" id="press"><i
+                                    class="fa-solid fa-cart-shopping" style="color: #ffffff; "></i> Buy Now</button>
+
+                            <button type="button" class="btn btn-info " id="press"><i class="fa-solid fa-heart"
+                                    style="color: #ffffff; "></i> Wishlist</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card mb-4 shadow rounded" style="width:20rem; top: 15px;">
+                        <img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80"
+                            class="card-img-top" alt="product_one">
+                        <div class="card-body">
+                            <h5 class="card-title text-center  ">TULIP</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit. <br><span class="text-black-50">200+
+                                    bought in past month</span>
+                            </p>
+                            <div style="padding-left: 95px;">
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                            </div>
+
+                            <p class="text-center " id="rupee">₹249</p>
+                            <button type="button" class="btn btn-warning m-4 " id="press"><i
+                                    class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Buy Now</button>
+                            <button type="button" class="btn btn-info " id="press"><i class="fa-solid fa-heart"
+                                    style="color: #ffffff;"></i> Wishlist</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card mb-4 shadow rounded" style="width:20rem; top: 15px;">
+                        <img src="https://images.unsplash.com/photo-1632011433298-689d8a6135a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2942&q=80"
+                            class="card-img-top" alt="product_one">
+                        <div class="card-body">
+                            <h5 class="card-title text-center pb-2 ">ORCHID</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit. <br><span class="text-black-50">100+
+                                    bought in past month</span>
+                            </p>
+                            <div style="padding-left: 105px;">
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+
+                            </div>
+
+                            <p class="text-center " id="rupee">₹300</p>
+                            <button type="button" class="btn btn-warning m-4 " id="press"><i
+                                    class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Buy Now</button>
+                            <button type="button" class="btn btn-info  " id="press"><i class="fa-solid fa-heart"
+                                    style="color: #ffffff;"></i> Wishlist</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--LATEST PRODUCTS-->
+        <br>
+        <br>
+        <br>
+        <section id="services" class="service-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" id="latest">
+                        <h6 class="display-6 text-center">Latest Products</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 ">
+                    <div class="card mb-4 shadow rounded" style="width:20rem; top: 15px;">
+                        <img src="https://images.unsplash.com/photo-1580595999172-787970a962d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2874&q=80"
+                            class="card-img-top" alt="product_one">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center ">WHITE LILY</h5>
+                            <p class="card-text text-center ">Lorem ipsum dolor sit. <br><span class="text-black-50">5%
+                                    Off Hurry!!</span>
+                            </p>
+                            <p class="text-center " id="rupee">₹400</p>
+                            <button type="button" class="btn btn-warning m-4 " id="press"><i
+                                    class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Buy Now</button>
+
+                            <button type="button" class="btn btn-info " id="press"><i class="fa-solid fa-heart"
+                                    style="color: #ffffff; "></i> Wishlist</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card mb-4 shadow rounded" style="width:20rem; top: 15px;">
+                        <img src="https://images.unsplash.com/photo-1594617952761-1d6cc41b59e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2913&q=80"
+                            class="card-img-top" alt="product_one">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">HYDRANGEA</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit. <br><span class="text-black-50">FREE
+                                    Delivery!!</span>
+                            </p>
+                            <p class="text-center " id="rupee">₹499</p>
+                            <button type="button" class="btn btn-warning m-4 " id="press"><i
+                                    class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Buy Now</button>
+                            <button type="button" class="btn btn-info " id="press"><i class="fa-solid fa-heart"
+                                    style="color: #ffffff;"></i> Wishlist</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 ">
+                    <div class="card mb-4 shadow rounded" style="width:20rem; top: 15px;">
+                        <img src="https://images.unsplash.com/photo-1633896090275-5001098188f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2946&q=80"
+                            class="card-img-top" alt="product_one">
+                        <div class="card-body">
+                            <h5 class="card-title text-center pb-2 ">AMARYLLIS</h5>
+                            <p class="card-text text-center">Lorem ipsum dolor sit. <br><span class="text-black-50">100+
+                                    bought in past month</span>
+                            </p>
+                            <p class="text-center " id="rupee">₹549</p>
+                            <button type="button" class="btn btn-warning m-4 " id="press"><i
+                                    class="fa-solid fa-cart-shopping" style="color: #ffffff;"></i> Buy Now</button>
+                            <button type="button" class="btn btn-info  " id="press"><i class="fa-solid fa-heart"
+                                    style="color: #ffffff;"></i> Wishlist</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <!-- BOUQUETS -->
+
+        <section>
+            <div class="card mb-3 shadow rounded bg-light border-0 m-4" id="bouqets">
+                <div class="row no-gutters">
+                    <div class="col-md-7 text-center ">
+                        <div class="card-body text-center  " style="margin-top: 100px;">
+                            <h2 class="card-title text-center" style="color:palevioletred" ;>Bouquets that Speak Love,
+                                Freshly Picked for You!</h2>
+                            <p class="card-text text-center " style="font-size:18px">Lorem ipsum dolor sit, amet
+                                consectetur adipisicing.</p>
+                            <button type="button" class="btn btn-outline-dark " id="press">Pick Your Bouquet</button>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="https://images.pexels.com/photos/1233442/pexels-photo-1233442.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            class="card-img shadow rounded" alt="Bouquet_image" height="400px" width="500"
+                            style="border: #ffffff;" ;>
+                    </div>
+        </section>
+
+        <!--OFFERS-->
+
+        <section>
+            <div class="container p-5">
+                <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="p-5 text-center bg-image rounded-3"
+                            style="height: 200px; background-color: rgb(177, 134, 194)  ;">
+                            <div class="mask">
+                                <div class="d-flex justify-content-center align-items-center h-100">
+                                    <div class="text-white">
+                                        <h3 class="mb-3" style="color: white; font-weight: 700; font-style: italic;">
+                                            Flowers from the Heart, Discounts from the Cart!</h3>
+                                        <a href="#" style="font-style:italic; text-decoration: none;">
+                                            <h5 class="text-black-50">UPTO 30% off on ₹499 & above!!</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <div class="p-5 text-center bg-image rounded-3"
+                            style="height: 200px;  background-color: rgb(177, 134, 194) ;">
+                            <div class="mask">
+                                <div class="d-flex justify-content-center align-items-center h-100">
+                                    <div class="text-white">
+                                        <h3 class="mb-3" style="color: white; font-weight: 700; font-style: italic;">
+                                            Bouquets of Beauty, Bargains of a Lifetime! </h3>
+                                        <a href="#" style="font-style:italic; text-decoration: none;">
+                                            <h5 class="text-black-50">BOUQUETS Staring With ₹1199!! </h5>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <!--REVIEWS-->
+
+        <section>
+            <section>
+                <div class="row d-flex justify-content-center" id="reviews">
+                    <div class="col-md-10 col-xl-8 text-center">
+                        <h5 class="mb-4 display-6">Customer Reviews</h5>
+                        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod obcaecati illo iure
+                            reiciendis similique? Dicta autem quasi fugit placeat, ipsam ipsa voluptates vel veniam cum
+                            amet adipisci perferendis, illo dolorem.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row text-center" style="padding-right: 65px;">
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/201/201634.png"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                        </div>
+                        <h5 class="mb-3">Ayushi Verma</h5>
+                        <h6 class="text-primary mb-3">New Delhi, India</h6>
+                        <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+                            tenetur.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center mb-0">
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star-half-alt fa-sm text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-5 mb-md-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/236/236831.png"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                        </div>
+                        <h5 class="mb-3">Rohan Sharma</h5>
+                        <h6 class="text-primary mb-3">Bangalore, India</h6>
+                        <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center mb-0">
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 mb-0">
+                        <div class="d-flex justify-content-center mb-4">
+                            <img src="https://cdn-icons-png.flaticon.com/512/6833/6833605.png"
+                                class="rounded-circle shadow-1-strong" width="150" height="150" />
+                        </div>
+                        <h5 class="mb-3">Jiya Bisht</h5>
+                        <h6 class="text-primary mb-3">Mumbai, India</h6>
+                        <p class="px-xl-3">
+                            <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+                            dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+                        </p>
+                        <ul class="list-unstyled d-flex justify-content-center mb-0">
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="fas fa-star fa-sm text-warning"></i>
+                            </li>
+                            <li>
+                                <i class="far fa-star fa-sm text-warning"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+
+    <!--CONTACT US-->
+
+    <footer>
+        <div id="contact" class="contact-area section-padding">
+            <div class="container">
+                <div class="section-title text-center">
+                    <h1 class="display-6">Contact Us</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-lg-7" style="padding-left: 80px; ">
+                        <div class="contact">
+                            <form class="form" name="enq" method="post" action="contact.php">
+                                <div class="row">
+                                    <div class="form-group col-md-6 p-2">
+                                        <input type="text" name="name" class="form-control" placeholder="Full Name"
+                                            required="required">
+                                    </div>
+                                    <div class="form-group col-md-6 p-2">
+                                        <input type="email" name="Email" class="form-control" placeholder="Email"
+                                            required="required">
+                                    </div>
+                                    <div class="form-group col-md-12 p-2">
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject"
+                                            required="required">
+                                    </div>
+                                    <div class="form-group col-md-12 p-2">
+                                        <textarea rows="6" name="message" class="form-control"
+                                            placeholder="Your Message" required="required"></textarea>
+                                    </div>
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" value="Send message" name="submit" id="submitButton"
+                                            class="btn btn-dark" title="Submit Your Message!"
+                                            style="box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg"
+                            alt="#contact_us" width="420px" height="340px" style="padding-left: 20px; ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section style="background-color:rgb(64, 19, 64)">
+        <br>
+        <div class="container " style="padding-left: 0%;">
+            <div class="row">
+
+                <div class="col-md-3">
+                    <h5 class=" font-weight-bold text-light">THESPRING</h5>
+                    <p class="text-light">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione hic nostrum
+                        molestias perferendis iusto autem libero aspernatur dolores, iure culpa neque ad recusandae
+                        cumque nobis qui sapiente! Debitis, at quo.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="font-weight-bold text-light">PRODUCTS</h5>
+                    <p class="text-light">Top Flowers</p>
+                    <p class="text-light">Latest Flowers</p>
+                    <p class="text-light">Bouquets</p>
+                    <p class="text-light">Decoration</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-uppercase  font-weight-bold text-light ">Contact Us</h5>
+                    <p class="text-light"><i class="fas fa-home mr-3 text-light"></i> New Delhi, 1100XX, India</p>
+                    <p class="text-light"><i class="fas fa-envelope mr-3 text-light"></i> info@gmail.com</p>
+                    <p class="text-light"><i class="fas fa-phone mr-3 text-light"></i> + 91 234 567 88</p>
+                    <p class="text-light"><i class="fas fa-print mr-3 text-light"></i> + 91 234 567 89</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-light">Follow us</h5>
+
+                    <!-- Facebook -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #3b5998" href="#!"
+                        role="button"><i class="fab fa-facebook-f text-light"></i></a>
+
+                    <!-- Twitter -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee" href="#!"
+                        role="button"><i class="fab fa-twitter"></i></a>
+
+                    <!-- Google -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39" href="#!"
+                        role="button"><i class="fab fa-google"></i></a>
+
+                    <!-- Instagram -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac" href="#!"
+                        role="button"><i class="fab fa-instagram"></i></a>
+
+                    <!-- Linkedin -->
+                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!"
+                        role="button"><i class="fab fa-linkedin-in"></i></a>
+
+                </div>
+            </div>
+        </div>
+        <div class="text-center p-3 text-white" style="background-color: rgba(0, 0, 0, 0.2)">Developed with <i
+                class="fa-solid fa-heart" style="color: #fa0000;"></i> by Anchal Sharma
+            <!-- <a class="text-white" href="#">All Rights are Reserved</a> -->
+        </div>
+        </div>
+        </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
